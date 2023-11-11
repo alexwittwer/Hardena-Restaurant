@@ -1,20 +1,19 @@
 import "./input.css";
 import css from "./input.css";
-import about from "./modules/about";
-import menu from "./modules/menu";
-import hours from "./modules/hours";
-import events from "./modules/events";
+import nav from "./modules/nav";
 import home from "./modules/home";
+import menu from "./modules/menu";
+import events from "./modules/events";
+
+const container = document.querySelector(".container");
 
 function main() {
-  const comp = document.createElement("div");
-
   return comp;
 }
-/* 
+
+container.appendChild(nav()); /*
 document.body.appendChild(about());
 document.body.appendChild(menu());
 document.body.appendChild(hours());
-document.body.appendChild(events()); 
-document.body.appendChild(home()); */
-document.body.appendChild(main());
+document.body.appendChild(events()); */
+container.appendChild(home());
