@@ -121,6 +121,50 @@ ul li {
 .section-operation {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(auto-fill, 1fr);
   justify-content: space-around;
+}
+
+/* --- About --- */
+
+.section-contact {
+  margin-top: 4rem;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* --- Media --- */
+
+@media screen and (max-width: 480px) {
+  .container {
+    margin: 0px auto;
+    max-width: 100vw;
+  }
+
+  .section-container {
+    min-height: 100vh;
+    box-shadow: none;
+  }
+
+  .brand .main-logo {
+    max-width: 80px;
+  }
+
+  .section-container > img {
+    width: 100%;
+  }
+
+  .section-title {
+    font-size: 3rem;
+  }
+
+  .section-operation:first-child {
+    align-items: flex-start;
+  }
+
+  .section-operation:last-child {
+    align-items: flex-end;
+  }
 }
