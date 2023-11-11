@@ -1,25 +1,48 @@
-export default function nav() {
+import home from "./home";
+import about from "./about";
+import menu from "./menu";
+import events from "./events";
+
+export default function nav(container) {
   const nav = document.createElement("nav");
-  const home = document.createElement("button");
-  const menu = document.createElement("button");
-  const events = document.createElement("button");
+  const homebtn = document.createElement("button");
+  const menubtn = document.createElement("button");
+  const eventsbtn = document.createElement("button");
+  const aboutbtn = document.createElement("button");
 
-  const navbuttons = [home, menu, events];
+  const navbuttons = [homebtn, menubtn, eventsbtn, aboutbtn];
 
-  // assign css classes
+  homebtn.textContent = "Home";
+  menubtn.textContent = "Menu";
+  eventsbtn.textContent = "Events";
+  aboutbtn.textContent = "About";
+
+  // assign css classes, event listeners
   nav.classList.add("nav-bar");
   navbuttons.forEach((element) => {
-    element.classList.add("nav-btn");
+    console.log(element.firstChild.data);
+    element.classList.add("nav-btn", element.firstChild.data);
+    element.addEventListener("click", (e) => {
+      //clear content
+      while (container.firstChild) {
+        container.removeChild(container.firstChild);
+      }
+      container.appendChild(selector[element.firstChild.data]);
+    });
   });
-
-  home.textContent = "Home";
-  menu.textContent = "Menu";
-  events.textContent = "Events";
 
   // append content
   navbuttons.forEach((element) => {
     nav.appendChild(element);
   });
+
+  // dispatcher to display page
+  const selector = {
+    Home: home(),
+    About: about(),
+    Menu: menu(),
+    Events: events(),
+  };
 
   return nav;
 }

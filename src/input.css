@@ -18,6 +18,13 @@ ul li {
   list-style: none;
 }
 
+.header {
+  background-color: white;
+  display: grid;
+  grid-template-rows: repeat(autofit, 1fr);
+  justify-content: center;
+}
+
 .container {
   background-color: white;
   display: grid;
