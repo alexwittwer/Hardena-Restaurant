@@ -1,5 +1,4 @@
 import "./input.css";
-import css from "./input.css";
 import nav from "./modules/nav";
 import home from "./modules/home";
 
