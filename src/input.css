@@ -1,10 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2&family=Poppins&family=Raleway&display=swap");
+
+:root {
+  --c1: #606c38;
+  --c2: #283618;
+  --c3: #fefae0;
+  --c4: #dda15e;
+  --c5: #bc6c25;
+}
+
 * {
-  color: white;
-  background-color: black;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+}
+
+ul li {
+  list-style: none;
 }
 
 .container {
-  background-color: slateblue;
-  padding: 50px;
-  margin: 15px;
+  background-color: white;
+  display: grid;
+  grid-template-rows: repeat(autofit, 1fr);
+  justify-content: center;
+}
+
+/* --- Nav --- */
+
+.nav-bar {
+  display: flex;
+}
+.nav-btn {
+  padding: 0.3rem;
+  margin: 0;
+  border-style: none;
+  background-color: white;
+}
+.nav-btn:hover {
+  background-color: var(--c1);
+}
+
+/* --- Section Home --- */
+.section-container {
+  background-color: var(--c4);
+  max-width: clamp(40ch, 60ch, 80ch);
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.8rem;
+  padding: 1rem;
+}
+
+.section-container img {
+  align-self: center;
+}
+
+.main-logo {
+  max-width: 150px;
+}
+
+.section-header {
+  font-size: 1rem;
+}
+.section-contact {
+  margin-top: 4rem;
+  font-size: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.section-time {
+  color: var(--c2);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.section-operation {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(auto-fill, 1fr);
+  justify-content: space-around;
+}
+.section-bio {
 }
