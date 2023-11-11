@@ -4,7 +4,7 @@
   --c1: #606c38;
   --c2: #283618;
   --c3: #fefae0;
-  --c4: #dda15e;
+  --c4: #a1681e;
   --c5: #bc6c25;
 }
 
@@ -20,23 +20,22 @@ ul li {
 
 .header {
   background-color: white;
-  display: grid;
-  grid-template-rows: repeat(autofit, 1fr);
-  justify-content: center;
+  position: sticky;
+  top: 0px;
 }
 
 .container {
   background-color: white;
-  height: 80vh;
-  display: grid;
-  grid-template-rows: repeat(autofit, 1fr);
-  justify-content: center;
+  min-height: 80vh;
+  max-width: 90vw;
+  margin: 10px auto;
 }
 
 /* --- Nav --- */
 
 .nav-bar {
   display: flex;
+  justify-content: center;
 }
 
 .nav-btn {
@@ -50,24 +49,30 @@ ul li {
   background-color: var(--c1);
 }
 
-/* --- Section Home --- */
+/* --- Section Common --- */
+
 .section-container {
+  margin: 0px auto;
+  color: var(--c3);
   background-color: var(--c4);
-  width: 70ch;
   height: 100%;
+  max-width: 60vw;
   display: flex;
   flex-flow: column nowrap;
   gap: 0.8rem;
   padding: 1rem;
+  box-shadow: 15px 15px 0px black;
 }
 
 .section-container > img {
   align-self: center;
   height: 400px;
-  width: 100%;
+  width: 90%;
   object-fit: cover;
   gap: 2rem;
 }
+
+/* --- Menu --- */
 
 .section-sub {
   display: flex;
@@ -84,6 +89,8 @@ ul li {
   font-size: 1rem;
 }
 
+/* --- Home --- */
+
 .main-logo {
   max-width: 100px;
 }
@@ -93,15 +100,8 @@ ul li {
 }
 
 .section-title {
+  color: var(--c3);
   font-size: 4rem;
-}
-
-.section-contact {
-  margin-top: 4rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
 }
 
 .brand {
@@ -111,7 +111,7 @@ ul li {
 }
 
 .section-time {
-  color: var(--c2);
+  color: var(--c3);
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
