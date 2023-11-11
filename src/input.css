@@ -66,6 +66,22 @@ ul li {
   height: 400px;
   width: 100%;
   object-fit: cover;
+  gap: 2rem;
+}
+
+.section-sub {
+  display: flex;
+  flex-flow: column nowrap;
+  font-size: 1.2rem;
+  font-weight: 600;
+  gap: 10px;
+}
+
+.menu-item {
+  font-weight: initial;
+  display: flex;
+  flex-flow: column nowrap;
+  font-size: 1rem;
 }
 
 .main-logo {

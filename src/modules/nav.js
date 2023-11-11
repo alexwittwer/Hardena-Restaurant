@@ -1,7 +1,6 @@
 import home from "./home";
 import about from "./about";
 import menu from "./menu";
-import events from "./events";
 
 export default function nav(container) {
   const nav = document.createElement("nav");
