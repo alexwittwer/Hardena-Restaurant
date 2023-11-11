@@ -146,6 +146,7 @@ ul li {
   .section-container {
     min-height: 100vh;
     box-shadow: none;
+    max-width: 100vw;
   }
 
   .brand .main-logo {
