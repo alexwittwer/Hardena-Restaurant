@@ -50,7 +50,7 @@ ul li {
 /* --- Section Home --- */
 .section-container {
   background-color: var(--c4);
-  max-width: clamp(40ch, 60ch, 80ch);
+  width: clamp(40ch, 60ch, 80ch);
   display: flex;
   flex-flow: column nowrap;
   gap: 0.8rem;
