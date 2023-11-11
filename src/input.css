@@ -27,6 +27,7 @@ ul li {
 
 .container {
   background-color: white;
+  height: 80vh;
   display: grid;
   grid-template-rows: repeat(autofit, 1fr);
   justify-content: center;
@@ -37,12 +38,14 @@ ul li {
 .nav-bar {
   display: flex;
 }
+
 .nav-btn {
   padding: 0.3rem;
   margin: 0;
   border-style: none;
   background-color: white;
 }
+
 .nav-btn:hover {
   background-color: var(--c1);
 }
@@ -50,32 +53,47 @@ ul li {
 /* --- Section Home --- */
 .section-container {
   background-color: var(--c4);
-  width: clamp(40ch, 60ch, 80ch);
+  width: 70ch;
+  height: 100%;
   display: flex;
   flex-flow: column nowrap;
   gap: 0.8rem;
   padding: 1rem;
 }
 
-.section-container img {
+.section-container > img {
   align-self: center;
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
 }
 
 .main-logo {
-  max-width: 150px;
+  max-width: 100px;
 }
 
 .section-header {
   font-size: 1rem;
 }
+
+.section-title {
+  font-size: 4rem;
+}
+
 .section-contact {
   margin-top: 4rem;
-  font-size: 0.7rem;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 2rem;
 }
+
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .section-time {
   color: var(--c2);
   display: flex;
@@ -83,11 +101,10 @@ ul li {
   justify-content: center;
   align-items: center;
 }
+
 .section-operation {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(auto-fill, 1fr);
   justify-content: space-around;
-}
-.section-bio {
 }

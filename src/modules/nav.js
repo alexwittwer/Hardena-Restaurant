@@ -7,14 +7,12 @@ export default function nav(container) {
   const nav = document.createElement("nav");
   const homebtn = document.createElement("button");
   const menubtn = document.createElement("button");
-  const eventsbtn = document.createElement("button");
   const aboutbtn = document.createElement("button");
 
-  const navbuttons = [homebtn, menubtn, eventsbtn, aboutbtn];
+  const navbuttons = [homebtn, menubtn, , aboutbtn];
 
   homebtn.textContent = "Home";
   menubtn.textContent = "Menu";
-  eventsbtn.textContent = "Events";
   aboutbtn.textContent = "About";
 
   // assign css classes, event listeners
@@ -41,7 +39,6 @@ export default function nav(container) {
     Home: home(),
     About: about(),
     Menu: menu(),
-    Events: events(),
   };
 
   return nav;
