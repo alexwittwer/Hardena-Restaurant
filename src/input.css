@@ -138,6 +138,25 @@ ul li {
   gap: 2rem;
 }
 
+/* --- Footer --- */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 40px;
+  grid-row: 3/4;
+}
+
+.github-icon {
+  height: 2rem;
+}
+
+#github-link:hover {
+  transition: 0.4s;
+  transform: rotate(360deg) scale(1.5);
+}
+
 /* --- Media --- */
 
 @media screen and (max-width: 480px) {
@@ -170,5 +189,26 @@ ul li {
 
   .section-operation:last-child {
     align-items: flex-end;
+  }
+
+  .nav-bar {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding-bottom: 10px;
+  }
+
+  .nav-btn {
+    padding: 0.3rem;
+    margin: 0;
+    font-size: 1.5rem;
+    border-style: none;
+    background-color: white;
+  }
+
+  .nav-btn:hover {
+    background-color: var(--c4);
+    color: white;
+    transition: 250ms;
   }
 }
