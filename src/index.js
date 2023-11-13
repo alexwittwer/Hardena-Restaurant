@@ -20,6 +20,7 @@ link.id = "github-link";
 const githubber = new Image();
 githubber.src = Github;
 githubber.classList.add("github-icon");
+githubber.alt = "Github Icon";
 
 link.appendChild(githubber);
 footer.appendChild(link);

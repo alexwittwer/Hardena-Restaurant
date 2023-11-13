@@ -35,6 +35,8 @@ export default function home() {
   hardenaFood.src = Food;
   hardenaFood.classList.add("section-image");
   hardenaLogo.classList.add("main-logo");
+  hardenaLogo.alt = "Hardena logo";
+  hardenaFood.atl = "A spread of Indonesian food on a table";
 
   // append content add text
 
